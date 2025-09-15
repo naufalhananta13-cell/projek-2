@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
                 String keterangan = "";
 
                 if (b1.isChecked()) {
-                    keterangan = "n=Telepon Rumah";
+                    keterangan = "Telepon Rumah";
                 } else if (b2.isChecked()) {
-                    keterangan = "n=Telepon Kantor";
+                    keterangan = "Telepon Kantor";
                 } else if (b3.isChecked()) {
-                    keterangan = "n=No Pribadi";
+                    keterangan = "No Pribadi";
                 } else {
                     Toast.makeText(MainActivity.this, "Silakan pilih salah satu opsi.", Toast.LENGTH_SHORT).show();
                     return;
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                String hasil = "Data masuk sebagai '" + Nama + "' dengan nomer '" + nomor + "' dengan keterangan '" + keterangan + "'";
+                String hasil = "masuk sebagai " + Nama + " dengan no : " + nomor + " dengan keterangan " + keterangan;
                 Toast.makeText(MainActivity.this, hasil, Toast.LENGTH_LONG).show();
             }
         });
